@@ -10,3 +10,27 @@ A negative number must not be a palindrome. Firstly, convert x to a String, use 
 > Source Code: FirstSolution.java
 
 > Runtime: 195ms.
+
+### Second Try
+Like Exercise 2, we could get the x's reverse integer to judge if it is equals to x.
+```
+public class Solution {
+    public boolean isPalindrome(int x) {
+       if (x < 0) return false;
+		long o = x;
+		long result = 0;
+
+		while (x != 0) {
+			result = result * 10 + x % 10;
+			x /= 10;
+		}
+
+		return o == result;
+    }
+}
+```
+>Note: To avoid stackoverflow, use long type to save the reverse integer.
+
+> Source Code: SecondSolution.java
+
+> Runtime: 245ms.
