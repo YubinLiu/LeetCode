@@ -3,13 +3,13 @@ public class SecondSolution {
         if (x < 0) return false;
 
         long o = x;
-		    long result = 0;
+	long result = 0;
 
-		    while (x != 0) {
-			      result = result * 10 + x % 10;
-			      x /= 10;
-		    }
+	while (x != 0) {
+	    result = result * 10 + x % 10;
+            x /= 10;
+	}
 
-		    return o == result;
+	return o == result;
     }
 }
