@@ -1,3 +1,7 @@
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Stack;
+
 public class FirstSolution {
     public boolean isValid(String s) {
         if (s.length() % 2 != 0) {
@@ -5,7 +9,7 @@ public class FirstSolution {
         }
         int left = 0;
         int right = 0;
-        
+
         for (int i = 0; i < s.length(); i++) {
             if (isLeftParentheses(s.charAt(i))) left++;
             else right++;
