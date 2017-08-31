@@ -11,3 +11,11 @@ Using recursion. If p is null and q is null, return true. But if one of them is 
 > Source Code: FirstSolution.java
 
 > Runtime: 0ms.
+
+### Second Try
+Clean the code.
+>Note: Don't use too many return statements.
+
+> Source Code: SecondSolution.java
+
+> Runtime: 0ms.
