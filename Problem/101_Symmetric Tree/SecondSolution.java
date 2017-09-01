@@ -7,6 +7,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+import java.util.Stack;
+
 public class SecondSolution {
     public boolean isSymmetric(TreeNode root) {
         if (root == null) return true;
