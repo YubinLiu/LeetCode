@@ -31,3 +31,11 @@ Use a variable named "result" as return. Use a variable named "nodes" to keep th
 > Source Code: FirstSolution.java
 
 > Runtime: 2ms.
+
+### Second Try
+Use recursion. If the size of "result" is less than the level, means it's not the last level, and you need add a new list at the head location of the "result". Then add the node's value into the correct location of the "result". Do the same operation to the left child and right child.
+>Note: Record the level, and add the value to the correct location.
+
+> Source Code: SecondSolution.java
+
+> Runtime: 2ms.
