@@ -7,30 +7,32 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-import java.util.Stack; 
+import java.util.Queue;
+import java.util.LinkedList;
+
 public class SecondSolution {
     public int maxDepth(TreeNode root) {
         if (root == null) return 0;
-        Stack<TreeNode> stack = new Stack<>();
-        Stack<Integer> value = new Stack<>();
+        Queue<TreeNode> nodes = new LinkedList<>();
+        Queue<Integer> values = new LinkedList<>();
 
-        stack.push(root);
-        value.push(1);
+        nodes.offer(root);
+        values.offer(1);
 
         int max = 0;
 
-        while (stack.size() > 0) {
-            TreeNode n = stack.pop();
-            int temp = value.pop();
+        while (nodes.size() > 0) {
+            TreeNode n = nodes.poll();
+            int temp = values.poll();
             max = Math.max(max, temp);
             if (n.left != null) {
-                stack.push(n.left);
-                value.push(temp + 1);
+                nodes.offer(n.left);
+                values.offer(temp + 1);
             }
 
             if (n.right != null) {
-                stack.push(n.right);
-                value.push(temp + 1);
+                nodes.offer(n.right);
+                values.offer(temp + 1);
             }
         }
 

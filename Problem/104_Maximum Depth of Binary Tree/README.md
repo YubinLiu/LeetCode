@@ -13,8 +13,8 @@ Use recursion. The maximum depth of the tree is the bigger one of maximum depth 
 > Runtime: 1ms.
 
 ### Second Try
-Use iterative method. Two stack, one is to keep the node, the other is to keep each node's depth, get the maximum one and return.
->Note: Recursive method is clearer and shorter.
+Use iterative method. Two queue, one is to keep the node, the other is to keep each node's depth, get the maximum one and return.
+>Note: Clear what you write! Don't just think queue and stack is both container, they are different!
 
 > Source Code: SecondSolution.java
 
