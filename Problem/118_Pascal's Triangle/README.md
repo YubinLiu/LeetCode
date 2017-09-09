@@ -52,3 +52,11 @@ Return
 > Source Code: ThirdSolution.java
 
 >Runtime: 0ms
+
+### Fourth Try
+可以看到每一行的左右元素是对称的，所以计算完左边以后，不用再计算右边，只要将其赋予相应的值即可。
+> Note: 对半，赋予相应的值，不做重复计算。
+
+> Source Code: FourthSolution.java
+
+> Runtime: 0ms
