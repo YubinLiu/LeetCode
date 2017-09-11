@@ -21,8 +21,8 @@ In this case, no transaction is done, i.e. max profit = 0.
 ```
 
 ### First Try
-At first, I use brute force method, but "Time Limit Exceeded".
->Note: 
+At first, I use brute force method, but "Time Limit Exceeded". So, change it. One loop, find the minimum number(called "min") of array[0]...array[i], i is smaller than the array length, so, (array[i] - min) is the maximum profit you can get in i. Find the biggest one of them, it's the result.  
+>Note: Judge if the input is empty at first.
 
 > Source Code: FirstSolution.java
 
