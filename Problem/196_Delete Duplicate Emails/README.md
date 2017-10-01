@@ -34,7 +34,7 @@ delete from Person where Id not in (select rest.Id from (select min(Id) as Id fr
 
 > Runtime: 796 ms
 
-### First Try
+### Second Try
 将两张 Person 表连接，判断两个表的用户的 Email 是否相同，若相同，删除 Id 较大的那个用户。
 ```
 delete p1 from Person p1, Person p2 where p1.Email = p2.Email and p1.Id > p2.Id;
