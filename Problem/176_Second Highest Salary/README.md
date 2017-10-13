@@ -1,4 +1,4 @@
-# 175. Combine Two Tables
+# 176. Second Highest Salary
 ### Description
 Write a SQL query to get the second highest salary from the **Employee** table.
 ```
